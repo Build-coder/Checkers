@@ -1,5 +1,6 @@
-var dragItem = document.querySelector("#item");
-var container = document.querySelector("#container");
+
+var dragItem = document.querySelector("#red-piece");
+var container = document.querySelector(".board");
 
 var active = false;
 var currentX;

@@ -35,18 +35,18 @@ td {
     height: 65px;
 }
 
-.red-turn-text {
+.background {
     text-align: center;
-    color: black;
-    font-family: "open sans";
-    font-size: 55px;
+    background-color: wheat;
+    width: 1000px;
+    height: 500px;  
 }
 
-.black-turn-text {
+.container {
     text-align: center;
-    font-family: "open sans";
-    font-size: 55px;
-    color: lightgray;
+    background-color: wheat;
+    width: 700px;
+    height: 250px;  
 }
 
 .black-piece {
@@ -58,6 +58,7 @@ td {
     border-radius: 50px;
 }
 
+/* class is red-piece */
 .red-piece {
     width: 20px;
     height: 20px;
@@ -93,7 +94,7 @@ span {
 
 /* css for interactive yellow circle */
 
-#container {
+  .board {
     width: 100%;
     height: 400px;
     background-color: #333;
@@ -104,19 +105,22 @@ span {
     border-radius: 7px;
     touch-action: none;
   }
-  #item {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(245, 230, 99);
-    border: 10px solid rgba(136, 136, 136, .5);
-    border-radius: 50%;
+
+/* id is red-piece */
+  #red-piece {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 50px;
     touch-action: none;
     user-select: none;
   }
-  #item:active {
+  #red-piece:active {
     background-color: rgba(168, 218, 220, 1.00);
   }
-  #item:hover {
+  #red-piece:hover {
     cursor: pointer;
     border-width: 20px;
   }
