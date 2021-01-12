@@ -1,0 +1,1 @@
+Interactive checkers game for the browser
