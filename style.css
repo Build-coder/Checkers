@@ -1,113 +1,23 @@
-* {
-    margin: auto;
-}
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-}
-
-div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.mobile {
-    display: none;
-}
-
-.desktop {
-    margin: 0;
-    width: 100%;
-}
-
-.noPieceHere {
-    background-color: #F0D2B4;
-}
-
-td {
-    text-align: center;
-    background-color: #BA7A3A;
-    width: 65px;
-    height: 65px;
-}
-
-.background {
-    text-align: center;
-    background-color: wheat;
-    width: 1000px;
-    height: 500px;  
-}
-
-.container {
-    text-align: center;
-    background-color: wheat;
-    width: 700px;
-    height: 250px;  
-}
-
-.black-piece {
-    width: 20px;
-    height: 20px;
-    padding: 12px;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 50px;
-}
-
-/* class is red-piece */
-.red-piece {
-    width: 20px;
-    height: 20px;
-    padding: 12px;
-    background-color: red;
-    border: 1px solid white;
-    border-radius: 50px;
-    touch-action: none;
-    user-select: none;
-}
-
-.king.red-piece {
-    background-color: orange;
-}
-
-.king.black-piece {
-    background-color: purple;
-}
-
-p {
-    display: inline-block;
-}
-
-#divider {
-    font-size: 90px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-span {
-    display: inline-block;
-}
 
 /* css for interactive yellow circle */
 
   .board {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Chessboard480.svg/1200px-Chessboard480.svg.png");
     width: 100%;
-    height: 400px;
-    background-color: #333;
+    height: 500px;
+    background-position: center;
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     border-radius: 7px;
     touch-action: none;
+    background-repeat: no-repeat;
   }
 
-/* id is red-piece */
-  #red-piece {
+/* class is red-piece */
+  .red-piece {
     width: 20px;
     height: 20px;
     padding: 12px;
@@ -117,10 +27,11 @@ span {
     touch-action: none;
     user-select: none;
   }
-  #red-piece:active {
+
+  .red-piece:active {
     background-color: rgba(168, 218, 220, 1.00);
   }
-  #red-piece:hover {
+  .red-piece:hover {
     cursor: pointer;
-    border-width: 20px;
+    border-width: 2px;
   }

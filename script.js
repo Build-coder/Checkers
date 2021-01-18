@@ -1,5 +1,9 @@
+// 2.) look up javascript closure 
+// 3.) javascript function callback
+// 4.) jquery
+// 1.) spring io - java framework - platform vs library
 
-var dragItem = document.querySelector("#red-piece");
+var dragItem = document.querySelector(".red-piece"); // list of query selectors
 var container = document.querySelector(".board");
 
 var active = false;
@@ -29,6 +33,7 @@ function dragStart(e) {
 
   if (e.target === dragItem) {
     active = true;
+    console.log("triggered");
   }
 }
 
@@ -39,6 +44,8 @@ function dragEnd(e) {
   active = false;
 }
 
+// only designed for one element. dragItem is a collection,
+// how to specify second el? third el?
 function drag(e) {
   if (active) {
   
@@ -55,7 +62,8 @@ function drag(e) {
     xOffset = currentX;
     yOffset = currentY;
 
-    setTranslate(currentX, currentY, dragItem);
+    // e.target - whatever mouse is clicking on
+    setTranslate(currentX, currentY, e.target);
   }
 }
 
